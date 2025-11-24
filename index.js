@@ -1,4 +1,4 @@
-    const units = {
+const units = {
     1: {
     title: "Sein & Haben",
     color: "indigo",
@@ -172,7 +172,7 @@
                             </thead>
                             <tbody class="text-gray-700">
                                 <tr><td class="font-bold text-gray-400">Ich</td><td>w<strong>ei</strong>ß</td></tr>
-                                <tr><td class="font-bold text-gray-400">Du</td><td>w<strong>ei</strong>ßt</td></tr>
+                                <tr><td class="font-bold text-gray-400">Du</td><td>w<strong>ei</strong>ß</td></tr>
                                 <tr><td class="font-bold text-gray-400">Er/Sie</td><td>w<strong>ei</strong>ß</td></tr>
                                 <tr><td class="font-bold text-gray-400">Wir</td><td>wissen</td></tr>
                             </tbody>
@@ -962,7 +962,7 @@
 
     function cleanString(str) {
     return str.toLowerCase()
-    .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?’!]/g, "")
+    .replace(/[.,/#!$%^&*;:{}=\-_`~()?¡¿']/g, "")
     .replace(/\s{2,}/g, " ")
     .trim();
 }
@@ -976,4 +976,3 @@
 
     // Run
     init();
-
